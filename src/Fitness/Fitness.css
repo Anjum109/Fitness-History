@@ -1,0 +1,37 @@
+.fitness-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.fitness-fill h1 {
+    margin-left: 10%;
+    color: #6c4fab;
+    ;
+}
+
+.fitness-fill p {
+    margin-left: 10%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 10% 10%;
+}
+
+.cart-container {
+    margin-top: 10%;
+}
+
+.my-image {
+    display: flex;
+}
+
+.my-image img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50px;
+    margin-top: 8%;
+    margin-right: 5%;
+}

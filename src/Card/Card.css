@@ -1,0 +1,45 @@
+.fitness-card {
+    width: 300px;
+    height: 440px;
+    border: 1px solid #95a0a7;
+    border-radius: 8px;
+    position: relative;
+}
+
+.fitness-card img {
+    width: 286px;
+    height: 286px;
+    margin: 7px;
+}
+
+.fitness-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.info {
+    margin: 0 14px;
+}
+
+.info p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.card-btn {
+    width: 100%;
+    color: #fff;
+    background: #6c4fab;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.card-btn:hover {
+    background-color: #3e09b1;
+}
