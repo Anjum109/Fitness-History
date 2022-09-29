@@ -12,10 +12,10 @@ const Cart = (props) => {
     const { cart } = props;
 
 
-    const [leisure, setLeisure] = useState([]);
+    const [breakTimeIn, setBreakTimeIn] = useState([]);
 
     const handleBreak = (e) => {
-        setLeisure(e.target.value);
+        setBreakTimeIn(e.target.value);
         addToDb(e.target.value);
     }
 
@@ -39,7 +39,7 @@ const Cart = (props) => {
 
                 <p className='exercise-time'><span className='exercise-time-name'>Exercise Time:</span> {totalTime} seconds</p>
 
-                <p className='break-time'><span className='exercise-time-name'>Break Time: </span> {leisure}</p>
+                <p className='break-time'><span className='exercise-time-name'>Break Time: </span> {breakTimeIn}</p>
 
             </div>
             {/* toast messe start */}

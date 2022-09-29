@@ -93,6 +93,10 @@
         grid-template-columns: repeat(1, 1fr);
 
     }
+
+    .cart-container {
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (min-width:451px) and (max-width:600px) {
@@ -106,6 +110,10 @@
         margin-left: 2%;
         margin-right: 2%;
 
+    }
+
+    .cart-container {
+        margin-top: 5%;
     }
 }
 
