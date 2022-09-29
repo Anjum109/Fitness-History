@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import AutohideExample from '../AutohideExample/AutohideExample';
 
 
-import { addToDb } from '../Utilities/db';
+
+import { addToDb } from '../../Utilities/db';
 import './Cart.css'
 
 

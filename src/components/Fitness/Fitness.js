@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
+
 import Cart from '../Cart/Cart';
-import image from '../images/lubaba.jpg'
+import image from '../../images/lubaba.jpg'
 
 import './Fitness.css'
 
@@ -31,8 +32,7 @@ const Fitness = () => {
                     {
                         fitnessInfo.map(card => <Card key={card.id}
                             card={card}
-                            handleAddTime={handleAddTime}
-                        ></Card>)
+                            handleAddTime={handleAddTime}></Card>)
                     }
                 </div>
             </div>
