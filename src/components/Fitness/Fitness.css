@@ -1,6 +1,6 @@
 .fitness-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .fitness-fill {
@@ -9,12 +9,23 @@
 
 .fitness-fill h1 {
     margin-left: 10%;
-    color: #6c4fab;
-    ;
+    color: #fff;
+    border: 2px solid #6c4fab;
+    background-color: #6c4fab;
+    width: 250px;
+    padding: 5px 5%;
+    border-radius: 20px;
+
+}
+
+.fitness-fill h1:hover {
+    background-color: #5734a3;
 }
 
 .fitness-fill p {
     margin-left: 10%;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .card-container {
@@ -26,23 +37,12 @@
     margin-top: 2%;
 }
 
-@media (max-width: 450px) {
-    .fitness-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
 
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-}
 
 .cart-container {
-    margin-top: 10%;
+    margin-top: 0;
     margin-right: 5%;
-    background-color: #fff;
+    background-color: rgb(202, 199, 199);
     padding: 5%;
 }
 
@@ -79,4 +79,45 @@
 
 .font {
     font-weight: 100;
+}
+
+@media (max-width: 450px) {
+    .fitness-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media only screen and (min-width:451px) and (max-width:600px) {
+    .fitness-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1000px) {
+    .fitness-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
 }

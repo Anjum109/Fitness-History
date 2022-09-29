@@ -14,6 +14,10 @@
     margin-top: 2%;
 }
 
+.Toast-btn:hover {
+    background-color: #5f3cac;
+}
+
 .toast-body {
     border: 2px solid #6c4fab;
     color: #fff;

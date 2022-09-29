@@ -11,3 +11,13 @@
 .Questions {
     background-color: white;
 }
+
+.title {
+    color: #fff;
+    border: 2px solid #8c7ab4;
+    background-color: #8c7ab4;
+    width: auto;
+    padding: 5px 5%;
+    border-radius: 20px;
+    text-align: center;
+}
