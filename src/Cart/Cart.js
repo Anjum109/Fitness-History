@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import AutohideExample from '../AutohideExample/AutohideExample';
+
+
 import { addToDb } from '../Utilities/db';
 import './Cart.css'
+
+
 
 const Cart = (props) => {
     const { cart } = props;
@@ -33,10 +38,12 @@ const Cart = (props) => {
 
                 <p className='exercise-time'><span className='exercise-time-name'>Exercise Time:</span> {totalTime} seconds</p>
 
-                <p className='exercise-time'><span className='exercise-time-name'>Break Time: </span> {leisure}</p>
+                <p className='break-time'><span className='exercise-time-name'>Break Time: </span> {leisure}</p>
 
             </div>
-            <button>Activity Completed</button>
+            {/* toast messe start */}
+            <AutohideExample></AutohideExample>
+            {/* toast msg end  */}
         </div>
     );
 };
