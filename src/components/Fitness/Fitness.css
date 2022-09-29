@@ -26,9 +26,24 @@
     margin-top: 2%;
 }
 
+@media (max-width: 450px) {
+    .fitness-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
 .cart-container {
     margin-top: 10%;
     margin-right: 5%;
+    background-color: #fff;
+    padding: 5%;
 }
 
 .my-image {

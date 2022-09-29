@@ -5,6 +5,7 @@ import Cart from '../Cart/Cart';
 import image from '../../images/lubaba.jpg'
 
 import './Fitness.css'
+import Questions from '../Questions/Questions';
 
 const Fitness = () => {
     const [fitnessInfo, setFitnessInfo] = useState([]);
@@ -54,6 +55,7 @@ const Fitness = () => {
 
                 <Cart cart={cart}></Cart>
             </div>
+            <Questions></Questions>
         </div >
     );
 };

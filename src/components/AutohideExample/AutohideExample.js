@@ -11,14 +11,15 @@ const AutohideExample = () => {
     return (
         <Row className='toast-structure'>
             <Col xs={6}>
+                <Button className='Toast-btn' onClick={() => setShow(true)}>Activity Completed</Button>
+            </Col>
+            <Col xs={6}>
                 <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
 
                     <Toast.Body className='toast-body'>Successfully Record Your Exercise Information.</Toast.Body>
                 </Toast>
             </Col>
-            <Col xs={6}>
-                <Button className='Toast-btn' onClick={() => setShow(true)}>Activity Completed</Button>
-            </Col>
+
         </Row>
     );
 }

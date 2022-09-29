@@ -6,7 +6,7 @@ import Fitness from './components/Fitness/Fitness';
 
 function App() {
   return (
-    <div>
+    <div >
       <Fitness></Fitness>
     </div>
   );
