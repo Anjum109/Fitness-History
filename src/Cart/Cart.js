@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { addToDb } from '../Utilities/db';
 import './Cart.css'
 
 const Cart = (props) => {
     const { cart } = props;
+
+
+    const [leisure, setLeisure] = useState([]);
+
+    const handleBreak = (e) => {
+        setLeisure(e.target.value);
+        addToDb(e.target.value);
+    }
 
     let totalTime = 0;
     for (const card of cart) {
@@ -13,9 +22,21 @@ const Cart = (props) => {
         <div>
             <div>
                 <h4>Exercise Details</h4>
+                <h3>Add A Break</h3>
+                <div className='btn-list'>
+                    <input className='btn-time' onClick={handleBreak} type="button" value="10s" />
+                    <input className='btn-time' onClick={handleBreak} type="button" value="20s" />
+                    <input className='btn-time' onClick={handleBreak} type="button" value="30s" />
+                    <input className='btn-time' onClick={handleBreak} type="button" value="40s" />
+                    <input className='btn-time' onClick={handleBreak} type="button" value="50s" />
+                </div>
 
                 <p className='exercise-time'><span className='exercise-time-name'>Exercise Time:</span> {totalTime} seconds</p>
+
+                <p className='exercise-time'><span className='exercise-time-name'>Break Time: </span> {leisure}</p>
+
             </div>
+            <button>Activity Completed</button>
         </div>
     );
 };

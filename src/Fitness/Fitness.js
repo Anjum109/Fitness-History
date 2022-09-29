@@ -50,14 +50,7 @@ const Fitness = () => {
                     <div className='my-fitness-info'>5.4 <span className='font'> Height</span></div>
                     <div className='my-fitness-info'>25<small> Yrs</small><span className='font'> age</span></div>
                 </div>
-                <h3>Add A Break</h3>
-                <div className='btn-list'>
-                    <input className='btn-time' type="button" value="10s" />
-                    <input className='btn-time' type="button" value="20s" />
-                    <input className='btn-time' type="button" value="30s" />
-                    <input className='btn-time' type="button" value="40s" />
-                    <input className='btn-time' type="button" value="50s" />
-                </div>
+
 
                 <Cart cart={cart}></Cart>
             </div>
