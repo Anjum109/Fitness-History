@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AutohideExample from '../AutohideExample/AutohideExample';
 
 
 
-import { addToDb } from '../../Utilities/db';
+import { addToDb, getStoredTime } from '../../Utilities/db';
 import './Cart.css'
 
 
@@ -12,10 +12,20 @@ const Cart = (props) => {
     const { cart } = props;
 
 
-    const [breakTimeIn, setBreakTimeIn] = useState([]);
+    const [leisure, setLeisure] = useState([]);
+
+    useEffect(() => {
+        const storedBreakTime = getStoredTime();
+        const savedBreakTime = [];
+        for (const e in storedBreakTime) {
+            savedBreakTime.push(e);
+
+            setLeisure(savedBreakTime);
+        }
+    }, []);
 
     const handleBreak = (e) => {
-        setBreakTimeIn(e.target.value);
+        setLeisure(e.target.value);
         addToDb(e.target.value);
     }
 
@@ -39,7 +49,7 @@ const Cart = (props) => {
 
                 <p className='exercise-time'><span className='exercise-time-name'>Exercise Time:</span> {totalTime} seconds</p>
 
-                <p className='break-time'><span className='exercise-time-name'>Break Time: </span> {breakTimeIn}</p>
+                <p className='break-time'><span className='exercise-time-name'>Break Time: </span> {leisure}</p>
 
             </div>
             {/* toast messe start */}
