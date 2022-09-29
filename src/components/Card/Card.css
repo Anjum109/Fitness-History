@@ -43,3 +43,17 @@
 .card-btn:hover {
     background-color: #3e09b1;
 }
+
+
+@media (max-width: 450px) {
+    .fitness-card {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:451px) and (max-width:600px) {
+    .fitness-card {
+        height: auto;
+    }
+
+}
