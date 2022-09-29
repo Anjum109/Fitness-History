@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 const Cart = (props) => {
     const { cart } = props;
@@ -13,7 +14,7 @@ const Cart = (props) => {
             <div>
                 <h4>Exercise Details</h4>
 
-                <p>Exercise Time: {totalTime} seconds</p>
+                <p className='exercise-time'><span className='exercise-time-name'>Exercise Time:</span> {totalTime} seconds</p>
             </div>
         </div>
     );

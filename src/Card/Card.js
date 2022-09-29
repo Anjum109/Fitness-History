@@ -12,7 +12,7 @@ const Card = (props) => {
             <div className='info'>
                 <p className='fitness-name'>{name}</p>
                 <p>For age: {age}</p>
-                <p>Time Required: {time}seconds</p>
+                <p>Time Required: {time}s</p>
             </div>
             <button onClick={() => handleAddTime(card)} className='card-btn'>Add To List</button>
         </div>
